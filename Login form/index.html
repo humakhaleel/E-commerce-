@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Login Form</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+       
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./download\ \(3\).jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}     
+        @media screen and (max-width:480px
+      ){
+}
+@media screen and (max-width: 768px) {
+}
+    
+      .container {
+    position: relative;
+    width: 100%;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .container .login {
+    position: relative;
+    width: 600px;
+    padding-top: 20px;
+    height: 600px;
+    flex-wrap: wrap;
+    background: #80DEEA !important;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(255, 255, 255, 0.9) !important;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 62% 38% 24% 76% / 59% 60% 40% 41%;
+    }
+    .container .login:hover {
+    border-radius: 50%;
+}
+.container .login.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.container .login h1 {
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #165d81; 
+    font-size: 1.8em;
+    line-height: 50px;
+    font-weight: bolder;
+    text-shadow: 4px 4px rgb(71, 192, 205); 
+}
+.container .drop form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 5px;
+    letter-spacing: 1.5px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.container .login form .input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    box-shadow: inset  2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgb(106, 163, 180), 15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 25px;
+    text-align: center;
+    line-height: 2px;
+}
+.input-box:hover{
+    box-shadow: rgba(223, 226, 67, 0.1);
+    border-radius :20px;
+}
+.container .login .input-box::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 5px;
+    background: rgba(8, 37, 41, 0.5);
+    border-radius: 5px;
+}
+.container .login .input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 200px;
+    font-size: 1em;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+.btn {
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+    font-weight: bold;
+    background: #6eb0d2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0d0426;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    transition: 0.25s;
+    text-align: center;
+    box-shadow: inset 10px 10px 10px rgba(0, 180, 216, 0.05), 15px 25px 10px rgba(0, 180, 216, 0.1), 15px 20px 20px rgba(0, 180, 216, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 44% 56% 65% 35% / 57% 58% 42% 43%;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+.btn.signup {
+    bottom: 150px;
+    right: -140px;
+    width: 80px;
+    height: 80px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 41% 37%;
+    background: #FF7043; 
+    box-shadow: inset 10px 10px 10px rgba(247, 127, 0, 0.05), 15px 25px 10px rgba(247, 127, 0, 0.1), 15px 20px 20px rgba(247, 127, 0, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+
+}
+.btn.signup::before {
+    left: 20px;
+    width: 15px;
+    height: 15px;
+}
+
+
+.btn :hover{
+    border-color: aqua;
+ 
+}
+.btn:focus{
+    outline: none;
+    background-color: #c9d918; 
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+   <div class="login">
+    <div class="content">
+        <h1>LOGIN</h1><br/>
+    <form>
+        <label   style ="width: 100%;
+        font-size: 1em;
+        font-weight: bold;
+        color: black;"for="Username">Username : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input class="input-box" type="text" id="Username" name="Username" required placeholder="Enter username">       
+       <br/><br/>
+           <label  style ="width: 100%;
+           font-size: 1em;
+           font-weight: bold;
+           color: black;" for="email" >Email Address: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input-box" type="email" id="email" name="email" placeholder="Enter register email">
+            <br/> <br/>      
+            <label  style ="width: 100%;
+            font-size: 1em;
+            font-weight: bold;
+            color: black;" for="password">Password : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="input-box"  type="password" id="password" name="password" placeholder="Enter password"><br/><br/> 
+            <div class="input-box">
+                <input type="submit" value="Login" href='#'target="_blank">
+            </div>       
+           
+        
+    </form>
+</div>
+<a href="#"target="_blank" class='btn'>Forgot Password</a>
+        <a href="./signup.html"target="_blank" class='btn signup'>Signup</a>
+</div>
+
+</div>
+</body>
+</html>
